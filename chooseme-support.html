@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChooseMe Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fcf6f0;
+      --card: rgba(255, 255, 255, 0.82);
+      --text: #3f3142;
+      --muted: #7c6a79;
+      --accent: #7a506d;
+      --accent-soft: #f0dde6;
+      --border: rgba(122, 80, 109, 0.12);
+      --shadow: 0 16px 40px rgba(92, 62, 85, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(244, 209, 221, 0.6), transparent 30%),
+        radial-gradient(circle at top right, rgba(213, 223, 214, 0.5), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px 48px;
+    }
+
+    .shell {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      padding: 32px 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 34rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      padding: 24px 22px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    p,
+    li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .faq-item {
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(122, 80, 109, 0.1);
+    }
+
+    .faq-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 0 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">ChooseMe Support</div>
+      <h1>Support for the moments that matter.</h1>
+      <p class="lead">ChooseMe is built to help people stay grounded through breakup recovery, no-contact streaks, SOS moments, journaling, and gentle reflection. If something in the app is not working the way it should, we want to help.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Contact support</h2>
+        <p>Email <a href="mailto:dustinsparage@aol.com?subject=ChooseMe%20Support">dustinsparage@aol.com</a> and include your device model, iOS version, and a short note about what happened.</p>
+      </article>
+
+      <article class="card">
+        <h2>What we can help with</h2>
+        <ul>
+          <li>Subscription and restore issues</li>
+          <li>Account, sync, or sign-in trouble</li>
+          <li>Bug reports and app crashes</li>
+          <li>Deletion and privacy requests</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Response time</h2>
+        <p>Most support emails receive a response within 2 business days. Urgent billing and account-access issues are prioritized first.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <strong>How do I restore my subscription?</strong>
+          <p>Open the paywall and tap <em>Restore purchases</em>. If the purchase still does not appear, email support and we will help you verify the App Store account tied to the subscription.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Do I need an account to use ChooseMe?</strong>
+          <p>You can begin the core experience without a complicated setup. Some cloud-backed features may require account services so your recovery history can stay with you across devices.</p>
+        </div>
+        <div class="faq-item">
+          <strong>How do I delete my data?</strong>
+          <p>Email support with the subject line <em>ChooseMe Data Deletion</em>. We can guide you through any in-app deletion flow and help confirm removal of synced data where applicable.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Is ChooseMe crisis support?</strong>
+          <p>No. ChooseMe is an emotional support and habit-building app, not crisis care or medical treatment. If you are in immediate danger or experiencing a mental health emergency, call or text 988 in the United States or contact your local emergency services.</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">Last updated April 8, 2026.</p>
+  </main>
+</body>
+</html>
